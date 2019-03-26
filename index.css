@@ -2,17 +2,26 @@
     box-sizing: border-box;
 }
 
+html {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 li {
     display: inline-block;
     font-size: 60px;
 }
 
 ul {
+    height: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-top: 0px;    
     margin-bottom: 0px;
-    padding-top: 70px;
     padding-left: 0px;
 }
 
@@ -20,7 +29,11 @@ header {
     top: 0px;
     background-color: #313639;
     color: #f9f9f9;
-    height: 200px;
+    height: 10vh;
+}
+
+nav {
+    height: 100%;
 }
 
 p:first-of-type {
@@ -34,11 +47,50 @@ p {
 }
 
 main {
-    height: 100vh;
+    height: 90vh;
 }
 
 body {
     background-color: #f9f9f9;
+}
+
+.header {
+    margin: 0px;
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 50px;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    color: #313639;
+}
+
+iframe {
+    height: 50vh;
+    width: 80vw;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+
+#emailListItem {
+    margin-top: 10%;
+}
+
+.contact-list {
+    height: 100vh;
+    display: block;
+    padding: 0px;
+    margin-left: 5%;
+}
+
+.contact-list-item {
+    margin-bottom: 10%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -102,7 +154,7 @@ body {
     }
 
     li > a {
-        margin-left: 10vw;
+        /*margin-left: 10vw;*/
         width: 100%;
     }
 
@@ -114,9 +166,17 @@ body {
         margin-left: 0px;
     }
 
-    #emailListItem {
-        margin-left: 10vw;
+    .contact-list-item {
+        width: 100%;
     }
+
+    .contact-list-link {
+        float: right;
+    }
+
+    /*#emailListItem {
+        margin-left: 10vw;
+    }*/
 
     .header {
         margin: 0px;
