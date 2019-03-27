@@ -156,6 +156,10 @@ iframe {
         margin-right: 5%;
     }
 
+    p:first-of-type {
+        margin-top: 0;
+    }
+    
     iframe {
         height: 80vh;
         width: 65vw;
