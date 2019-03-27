@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: portfolioMainFont;
+    src: url(DidactGothic.ttf);
+}
+
+@font-face {
+    font-family: portfolioHeaderFont;
+    src: url(PT_Sans-Web-Regular.ttf);
+}
+
 html {
     position: fixed;
     top: 0;
@@ -30,6 +40,7 @@ header {
     background-color: #313639;
     color: #f9f9f9;
     height: 10vh;
+    font-family: portfolioHeaderFont;
 }
 
 nav {
@@ -38,16 +49,20 @@ nav {
 
 p:first-of-type {
     text-indent: 50px;
+    margin-top: 10%;
 }
 
 p {
-    margin: 5%;
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
     color: #313639;
     font-size: 50px;
 }
 
 main {
     height: 90vh;
+    font-family: portfolioMainFont;
 }
 
 body {
@@ -58,7 +73,7 @@ body {
     margin: 0px;
     text-decoration: none;
     color: #f9f9f9;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 label {
@@ -93,7 +108,7 @@ iframe {
     margin-bottom: 10%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
     header {
         position: fixed;
         bottom: 0px;
@@ -136,6 +151,9 @@ iframe {
 
     p {
         font-size: 30px;
+        margin: 0;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     iframe {
@@ -154,7 +172,6 @@ iframe {
     }
 
     li > a {
-        /*margin-left: 10vw;*/
         width: 100%;
     }
 
@@ -173,10 +190,6 @@ iframe {
     .contact-list-link {
         float: right;
     }
-
-    /*#emailListItem {
-        margin-left: 10vw;
-    }*/
 
     .header {
         margin: 0px;
