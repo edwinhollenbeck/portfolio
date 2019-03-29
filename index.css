@@ -49,7 +49,6 @@ nav {
 
 p:first-of-type {
     text-indent: 50px;
-    margin-top: 10%;
 }
 
 p {
@@ -61,8 +60,15 @@ p {
 }
 
 main {
-    height: 90vh;
     font-family: portfolioMainFont;
+    height: 90vh;
+    top: 10vh;
+    overflow: scroll;
+}
+
+section {
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 body {
@@ -91,6 +97,7 @@ iframe {
     position: relative;
     top: 10%;
     left: 10%;
+    margin-bottom: 5%;
 }
 
 #emailListItem {
@@ -106,6 +113,15 @@ iframe {
 
 .contact-list-item {
     margin-bottom: 10%;
+}
+
+#quiz-app-links {
+    display: block;
+    text-align: center;
+}
+
+#skills {
+    text-align: center;
 }
 
 @media screen and (min-width: 1025px) {
@@ -130,14 +146,14 @@ iframe {
     }
 
     main {
+        position: absolute;
         height: 100vh;
         width: 80vw;
-        position: absolute;
         left: 20vw;
+        overflow: scroll;
     }
 
     body {
-        height: 100%;
         margin: 0px;
     }
 
@@ -166,6 +182,7 @@ iframe {
         position: relative;
         top: 10%;
         left: 10%;
+        margin-bottom: 5%;
     }
 
     ul {
