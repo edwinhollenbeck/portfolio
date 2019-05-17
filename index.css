@@ -18,6 +18,8 @@ html {
     bottom: 0;
     left: 0;
     right: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 li {
@@ -67,8 +69,9 @@ main {
 }
 
 section {
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin: auto;
+    width: 90%;
+    padding: 2em;
 }
 
 body {
@@ -82,7 +85,7 @@ body {
     font-size: 40px;
 }
 
-label {
+h2 {
     display: block;
     text-align: center;
     margin-top: 50px;
@@ -97,7 +100,7 @@ iframe {
     position: relative;
     top: 10%;
     left: 10%;
-    margin-bottom: 5%;
+    margin-top: 1em;
 }
 
 #emailListItem {
@@ -115,7 +118,7 @@ iframe {
     margin-bottom: 10%;
 }
 
-#quiz-app-links {
+#app-links {
     display: block;
     text-align: center;
     font-size: 40px;
@@ -157,16 +160,6 @@ iframe {
 
     body {
         margin: 0px;
-    }
-
-    section {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        width: 100%;
     }
 
     p {
